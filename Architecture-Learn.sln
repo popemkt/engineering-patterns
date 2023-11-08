@@ -9,6 +9,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "StructuredLogging", "Struct
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SL.Api", "StructuredLogging\SL.Api\SL.Api.csproj", "{9FE285C5-0ED5-4353-AF60-B7C93B8B813E}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "OpenTelemetry", "OpenTelemetry", "{C1B4C58E-D868-4B17-AD30-7A5BDD30A423}"
+	ProjectSection(SolutionItems) = preProject
+		OpenTelemetry\Readme.md = OpenTelemetry\Readme.md
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

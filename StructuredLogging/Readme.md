@@ -5,4 +5,4 @@ https://www.youtube.com/watch?v=_iryZxv8Rxw
 docker-compose up
 ```
 ## TODO
-Make it K8s-ready, and use ELK stack for logging.
+Make it K8s-ready, ELK stack for logging.
