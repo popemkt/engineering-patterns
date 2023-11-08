@@ -1,0 +1,90 @@
+11/08/2023 20:40:28 Start building host at 11/08/2023 20:40:28
+11/08/2023 20:40:28 Start running host at 11/08/2023 20:40:28
+11/08/2023 20:40:30 HTTP "GET" "/swagger" responded 301 in 24.4889 ms
+11/08/2023 20:40:30 HTTP "GET" "/swagger/index.html" responded 200 in 63.8920 ms
+11/08/2023 20:40:30 HTTP "GET" "/swagger/swagger-ui-standalone-preset.js" responded 200 in 202.6400 ms
+11/08/2023 20:40:30 HTTP "GET" "/swagger/swagger-ui.css" responded 200 in 248.7422 ms
+11/08/2023 20:40:30 HTTP "GET" "/swagger/swagger-ui-bundle.js" responded 200 in 203.4598 ms
+11/08/2023 20:40:31 HTTP "GET" "/swagger/favicon-32x32.png" responded 200 in 0.4636 ms
+11/08/2023 20:40:35 HTTP "GET" "/swagger/v1/swagger.json" responded 200 in 110.5800 ms
+11/08/2023 20:40:40 Failed to determine the https port for redirect.
+11/08/2023 20:40:40 Start getting forecast for 11/08/2023 20:40:40
+11/08/2023 20:40:40 HTTP "GET" "/weatherforecast" responded 200 in 25.8032 ms
+11/08/2023 20:43:10 Start building host at 11/08/2023 20:43:10
+11/08/2023 20:43:10 Start running host at 11/08/2023 20:43:10
+11/08/2023 20:43:12 HTTP "GET" "/swagger/index.html" responded 200 in 71.4026 ms
+11/08/2023 20:43:17 HTTP "GET" "/swagger/v1/swagger.json" responded 200 in 118.4038 ms
+11/08/2023 14:10:23 Start building host at 11/08/2023 14:10:23
+11/08/2023 14:10:23 Start running host at 11/08/2023 14:10:23
+11/08/2023 14:10:29 Host terminated at 11/08/2023 14:10:29
+11/08/2023 14:11:31 Start building host at 11/08/2023 14:11:31
+11/08/2023 14:11:31 Start running host at 11/08/2023 14:11:31
+11/08/2023 14:13:56 Failed to determine the https port for redirect.
+11/08/2023 14:13:56 HTTP "GET" "/" responded 404 in 13.6703 ms
+11/08/2023 14:15:55 Host terminated at 11/08/2023 14:15:55
+11/08/2023 14:16:09 Start building host at 11/08/2023 14:16:09
+11/08/2023 14:16:09 Start running host at 11/08/2023 14:16:09
+11/08/2023 14:16:24 Failed to determine the https port for redirect.
+11/08/2023 14:16:24 HTTP "GET" "/" responded 404 in 14.9600 ms
+11/08/2023 14:18:23 HTTP "GET" "/" responded 404 in 0.9610 ms
+11/08/2023 14:18:31 HTTP "GET" "/swagger" responded 301 in 0.5862 ms
+11/08/2023 14:18:31 HTTP "GET" "/swagger/index.html" responded 200 in 30.1157 ms
+11/08/2023 14:18:31 HTTP "GET" "/swagger/swagger-ui-standalone-preset.js" responded 200 in 10.5045 ms
+11/08/2023 14:18:31 HTTP "GET" "/swagger/swagger-ui.css" responded 200 in 13.0129 ms
+11/08/2023 14:18:31 HTTP "GET" "/swagger/swagger-ui-bundle.js" responded 200 in 13.5314 ms
+11/08/2023 14:18:31 HTTP "GET" "/swagger/favicon-32x32.png" responded 200 in 0.2788 ms
+11/08/2023 14:18:31 HTTP "GET" "/swagger/v1/swagger.json" responded 200 in 55.2415 ms
+11/08/2023 14:18:48 Host terminated at 11/08/2023 14:18:48
+11/08/2023 14:20:19 Start building host at 11/08/2023 14:20:19
+11/08/2023 14:20:19 Start running host at 11/08/2023 14:20:19
+11/08/2023 14:20:39 HTTP "GET" "/swagger" responded 301 in 9.5540 ms
+11/08/2023 14:20:39 HTTP "GET" "/swagger/index.html" responded 200 in 28.3016 ms
+11/08/2023 14:20:39 HTTP "GET" "/swagger/swagger-ui.css" responded 200 in 13.6731 ms
+11/08/2023 14:20:39 HTTP "GET" "/swagger/swagger-ui-bundle.js" responded 200 in 12.0412 ms
+11/08/2023 14:20:39 HTTP "GET" "/swagger/swagger-ui-standalone-preset.js" responded 200 in 11.2257 ms
+11/08/2023 14:20:40 HTTP "GET" "/swagger/favicon-32x32.png" responded 200 in 0.4250 ms
+11/08/2023 14:20:44 HTTP "GET" "/swagger/v1/swagger.json" responded 200 in 63.6384 ms
+11/08/2023 14:20:46 Failed to determine the https port for redirect.
+11/08/2023 14:20:46 Start getting forecast for 11/08/2023 14:20:46
+11/08/2023 14:20:46 HTTP "GET" "/weatherforecast" responded 200 in 11.5750 ms
+11/08/2023 14:20:47 Start getting forecast for 11/08/2023 14:20:47
+11/08/2023 14:20:47 HTTP "GET" "/weatherforecast" responded 200 in 1.2481 ms
+11/08/2023 14:20:48 Start getting forecast for 11/08/2023 14:20:48
+11/08/2023 14:20:48 HTTP "GET" "/weatherforecast" responded 200 in 1.2486 ms
+11/08/2023 14:20:48 Start getting forecast for 11/08/2023 14:20:48
+11/08/2023 14:20:48 HTTP "GET" "/weatherforecast" responded 200 in 0.7611 ms
+11/08/2023 14:20:48 Start getting forecast for 11/08/2023 14:20:48
+11/08/2023 14:20:48 HTTP "GET" "/weatherforecast" responded 200 in 0.9519 ms
+11/08/2023 14:20:49 Start getting forecast for 11/08/2023 14:20:49
+11/08/2023 14:20:49 HTTP "GET" "/weatherforecast" responded 200 in 0.6171 ms
+11/08/2023 14:20:49 Start getting forecast for 11/08/2023 14:20:49
+11/08/2023 14:20:49 HTTP "GET" "/weatherforecast" responded 200 in 0.7025 ms
+11/08/2023 14:20:49 Start getting forecast for 11/08/2023 14:20:49
+11/08/2023 14:20:49 HTTP "GET" "/weatherforecast" responded 200 in 0.8637 ms
+11/08/2023 14:20:49 Start getting forecast for 11/08/2023 14:20:49
+11/08/2023 14:20:49 HTTP "GET" "/weatherforecast" responded 200 in 0.5852 ms
+11/08/2023 14:20:49 Start getting forecast for 11/08/2023 14:20:49
+11/08/2023 14:20:49 HTTP "GET" "/weatherforecast" responded 200 in 0.7656 ms
+11/08/2023 14:20:49 Start getting forecast for 11/08/2023 14:20:49
+11/08/2023 14:20:49 HTTP "GET" "/weatherforecast" responded 200 in 0.6545 ms
+11/08/2023 14:20:49 Start getting forecast for 11/08/2023 14:20:49
+11/08/2023 14:20:49 HTTP "GET" "/weatherforecast" responded 200 in 0.8076 ms
+11/08/2023 14:20:49 Start getting forecast for 11/08/2023 14:20:49
+11/08/2023 14:20:49 HTTP "GET" "/weatherforecast" responded 200 in 0.6183 ms
+11/08/2023 14:20:50 Start getting forecast for 11/08/2023 14:20:50
+11/08/2023 14:20:50 HTTP "GET" "/weatherforecast" responded 200 in 0.7048 ms
+11/08/2023 14:20:50 Start getting forecast for 11/08/2023 14:20:50
+11/08/2023 14:20:50 HTTP "GET" "/weatherforecast" responded 200 in 0.6448 ms
+11/08/2023 14:20:50 Start getting forecast for 11/08/2023 14:20:50
+11/08/2023 14:20:50 HTTP "GET" "/weatherforecast" responded 200 in 0.5786 ms
+11/08/2023 14:20:50 Start getting forecast for 11/08/2023 14:20:50
+11/08/2023 14:20:50 HTTP "GET" "/weatherforecast" responded 200 in 0.7869 ms
+11/08/2023 14:20:50 Start getting forecast for 11/08/2023 14:20:50
+11/08/2023 14:20:50 HTTP "GET" "/weatherforecast" responded 200 in 0.6485 ms
+11/08/2023 14:20:50 Start getting forecast for 11/08/2023 14:20:50
+11/08/2023 14:20:50 HTTP "GET" "/weatherforecast" responded 200 in 0.5673 ms
+11/08/2023 14:20:51 Start getting forecast for 11/08/2023 14:20:51
+11/08/2023 14:20:51 HTTP "GET" "/weatherforecast" responded 200 in 0.5832 ms
+11/08/2023 14:24:15 Host terminated at 11/08/2023 14:24:15
+11/08/2023 14:24:27 Start building host at 11/08/2023 14:24:27
+11/08/2023 14:24:28 Start running host at 11/08/2023 14:24:28

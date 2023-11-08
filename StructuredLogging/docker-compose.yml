@@ -1,0 +1,20 @@
+version: '3.8'
+services:
+  app:
+    build: ./SL.Api
+    ports:
+      - "5000:8080"#Swagger UI
+    depends_on: 
+      - seq
+  seq:
+    image: datalust/seq:latest
+    environment:
+      ACCEPT_EULA: Y
+    ports:
+      - "5001:80"#Seq UI
+      - "5341:5341"
+    volumes:
+      - seq_data:/data
+
+volumes:
+  seq_data:
