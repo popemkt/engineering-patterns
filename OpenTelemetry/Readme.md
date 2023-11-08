@@ -1,2 +1,2 @@
 ## TODO
-OTel with Zipkin
+OTel with Zipkin/Jaeger/Prometheus
