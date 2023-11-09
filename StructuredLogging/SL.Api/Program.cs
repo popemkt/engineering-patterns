@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using Serilog;
+using Serilog.Exceptions;
 using SL.Api.Services;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -17,6 +18,7 @@ var configuration = new ConfigurationBuilder()
 Log.Logger = new LoggerConfiguration()
     .ReadFrom.Configuration(configuration)
     .Enrich.FromLogContext()
+    .Enrich.WithExceptionDetails()
     .Enrich.WithMachineName()
     .Enrich.WithProcessId()
     .Enrich.WithThreadId()
