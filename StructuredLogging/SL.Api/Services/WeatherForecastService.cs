@@ -17,11 +17,16 @@ public class WeatherForecastService(ILogger<WeatherForecastService> logger) : IW
         logger.LogInformation("Start getting forecast for {date}", startDate);
         
         var rng = new Random();
-        return Enumerable.Range(1, 5).Select(index => new WeatherForecast
-        (
-            DateOnly.FromDateTime(DateTime.Now.AddDays(index)),
-            rng.Next(-20, 55),
-            _summaries[rng.Next(_summaries.Length)]
-        ));
+        return Enumerable.Range(1, 5).Select(index =>
+        {
+            var forecast = new WeatherForecast
+            (
+                DateOnly.FromDateTime(DateTime.Now.AddDays(index)),
+                rng.Next(-20, 55),
+                _summaries[rng.Next(_summaries.Length)]
+            );
+            logger.LogInformation("Generated forecast of {forecast}", forecast);
+            return forecast;
+        });
     }
 }

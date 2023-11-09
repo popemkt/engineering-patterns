@@ -2,6 +2,8 @@ version: '3.8'
 services:
   app:
     build: ./SL.Api
+    environment:
+      LOGGER_PROVIDER: seq
     ports:
       - "5000:8080"#Swagger UI
     depends_on: 
@@ -12,7 +14,7 @@ services:
       ACCEPT_EULA: Y
     ports:
       - "5001:80"#Seq UI
-      - "5341:5341"
+      #Seq ingestion port at 5341
     volumes:
       - seq_data:/data
 

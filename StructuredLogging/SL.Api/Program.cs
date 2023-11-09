@@ -8,17 +8,21 @@ builder.Host.UseSerilog();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddScoped<IWeatherForecastService, WeatherForecastService>();
-
+var loggerSink = Environment.GetEnvironmentVariable("LOGGER_PROVIDER");
 var configuration = new ConfigurationBuilder()
     .AddJsonFile("appsettings.json")
-    .AddJsonFile("appsettings.Development.json", true)
+    .AddJsonFile($"{loggerSink}.json", true)
     .Build();
 
 Log.Logger = new LoggerConfiguration()
     .ReadFrom.Configuration(configuration)
+    .Enrich.FromLogContext()
+    .Enrich.WithMachineName()
+    .Enrich.WithProcessId()
+    .Enrich.WithThreadId()
     .CreateLogger();
-    //There's an overload of CreateBootstrapLogger for bootstrap (aka not yet built app) logging only, then we can
-    //override with another if needed (one that can use DI etc), see  
+//There's an overload of CreateBootstrapLogger for bootstrap (aka not yet built app) logging only, then we can
+//override with another if needed (one that can use DI etc), see  
 try
 {
     Log.Information("Start building host at {time}", DateTime.Now);

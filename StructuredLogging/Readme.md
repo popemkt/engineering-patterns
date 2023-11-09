@@ -2,7 +2,8 @@
 https://www.youtube.com/watch?v=_iryZxv8Rxw
 ## Usage
 ```shell
-docker-compose up
+docker-compose -f docker-compose-seq up
+docker-compose -f docker-compose-elk up
 ```
 ## TODO
-Make it K8s-ready, ELK stack for logging, try SigNoz as well.
+Make it K8s-ready, Secure ELK with password, try SigNoz as well.

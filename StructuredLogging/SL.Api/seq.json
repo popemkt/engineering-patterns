@@ -1,0 +1,12 @@
+{
+  "Serilog": {
+    "WriteTo": [
+      {
+        "Name": "Seq",
+        "Args": {
+          "serverUrl": "http://seq:5341"
+        }
+      }
+    ]
+  }
+}
