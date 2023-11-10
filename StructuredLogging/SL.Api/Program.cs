@@ -4,12 +4,17 @@ using Serilog.Exceptions;
 using SL.Api.Services;
 
 var builder = WebApplication.CreateBuilder(args);
-//Serilog will replace default providers, ILogger will use Serilog's implementation
+//DOC Serilog will replace default providers, ILogger will use Serilog's implementation
 builder.Host.UseSerilog();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddScoped<IWeatherForecastService, WeatherForecastService>();
 var loggerSink = Environment.GetEnvironmentVariable("LOGGER_PROVIDER");
+if (loggerSink == "ai")
+    //DOC Should change to use connection string as this is obsolete
+    builder.Services.AddApplicationInsightsTelemetry(Environment.GetEnvironmentVariable("INSTRUMENTATION_KEY"))
+        //DOC If using AI in Kubernetes, add this
+        .AddApplicationInsightsKubernetesEnricher();
 var configuration = new ConfigurationBuilder()
     .AddJsonFile("appsettings.json")
     .AddJsonFile($"{loggerSink}.json", true)
@@ -22,9 +27,9 @@ Log.Logger = new LoggerConfiguration()
     .Enrich.WithMachineName()
     .Enrich.WithProcessId()
     .Enrich.WithThreadId()
+    //DOC There's an overload of CreateBootstrapLogger for bootstrap (aka not yet built app) logging only, then we can
+    //DOC override with another if needed (one that can use DI etc), see https://github.com/serilog/serilog-aspnetcore#two-stage-initialization 
     .CreateLogger();
-//There's an overload of CreateBootstrapLogger for bootstrap (aka not yet built app) logging only, then we can
-//override with another if needed (one that can use DI etc), see  
 try
 {
     Log.Information("Start building host at {time}", DateTime.Now);
@@ -52,5 +57,6 @@ catch (Exception e)
 }
 finally
 {
+    //DOC flush and close the logger
     Log.CloseAndFlush();
 }

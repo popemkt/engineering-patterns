@@ -16,6 +16,7 @@ public class WeatherForecastService(ILogger<WeatherForecastService> logger) : IW
 
     public IEnumerable<WeatherForecast> GetForecast(DateTime startDate)
     {
+        //DOC Using LogContext to add properties to the log context
         using var _ = LogContext.PushProperty("method-name", nameof(GetForecast));
         logger.LogInformation("Start getting forecast for {date}", startDate);
 

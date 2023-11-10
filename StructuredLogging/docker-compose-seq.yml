@@ -5,7 +5,7 @@ services:
     environment:
       LOGGER_PROVIDER: seq
     ports:
-      - "5000:8080"#Swagger UI
+      - "5000:8080"#DOC Swagger UI
     depends_on: 
       - seq
   seq:

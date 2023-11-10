@@ -1,0 +1,9 @@
+version: '3.8'
+services:
+  app:
+    build: ./SL.Api
+    environment:
+      INSTRUMENTATION_KEY: "ENTER_YOUR_KEY"#DOC deprecated soon
+      LOGGER_PROVIDER: ai
+    ports:
+      - "5000:8080"#DOC Swagger UI
