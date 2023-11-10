@@ -1,3 +1,5 @@
+using Serilog.Context;
+
 namespace SL.Api.Services;
 
 public interface IWeatherForecastService
@@ -14,8 +16,9 @@ public class WeatherForecastService(ILogger<WeatherForecastService> logger) : IW
 
     public IEnumerable<WeatherForecast> GetForecast(DateTime startDate)
     {
+        using var _ = LogContext.PushProperty("method-name", nameof(GetForecast));
         logger.LogInformation("Start getting forecast for {date}", startDate);
-        
+
         var rng = new Random();
         return Enumerable.Range(1, 5).Select(index =>
         {

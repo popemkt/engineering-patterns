@@ -1,0 +1,14 @@
+{
+  "Serilog": {
+    "WriteTo": [
+      {
+        "Name": "Elasticsearch",
+        "Args": {
+          "nodeUris": "http://os:9200",
+          "indexFormat": "index-{0:yyyy.MM}",
+          "numberOfShards": 1
+        }
+      }
+    ]
+  }
+}

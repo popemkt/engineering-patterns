@@ -6,6 +6,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "StructuredLogging", "Struct
 		StructuredLogging\docker-compose-seq.yml = StructuredLogging\docker-compose-seq.yml
 		.dockerignore = .dockerignore
 		StructuredLogging\docker-compose-elk.yml = StructuredLogging\docker-compose-elk.yml
+		StructuredLogging\docker-compose-os.yml = StructuredLogging\docker-compose-os.yml
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SL.Api", "StructuredLogging\SL.Api\SL.Api.csproj", "{9FE285C5-0ED5-4353-AF60-B7C93B8B813E}"
