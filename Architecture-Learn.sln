@@ -17,6 +17,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "OpenTelemetry", "OpenTeleme
 		OpenTelemetry\Readme.md = OpenTelemetry\Readme.md
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "OAuth", "OAuth", "{1C9330F1-F3B3-49BA-9FC9-25E4B80539C5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleOAuth", "OAuth\SimpleOAuth\SimpleOAuth.csproj", "{41A66FEE-06A1-4F05-8D5F-B220B9E7FE5A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TPL", "TPL", "{5437A896-38A5-4D86-B83A-7E3E3432E7F5}"
+	ProjectSection(SolutionItems) = preProject
+		TPL\Readme.md = TPL\Readme.md
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,11 +33,16 @@ Global
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{9FE285C5-0ED5-4353-AF60-B7C93B8B813E} = {751B3C9D-4B98-46EF-8F55-6ADD91FE2586}
+		{41A66FEE-06A1-4F05-8D5F-B220B9E7FE5A} = {1C9330F1-F3B3-49BA-9FC9-25E4B80539C5}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{9FE285C5-0ED5-4353-AF60-B7C93B8B813E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{9FE285C5-0ED5-4353-AF60-B7C93B8B813E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9FE285C5-0ED5-4353-AF60-B7C93B8B813E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9FE285C5-0ED5-4353-AF60-B7C93B8B813E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{41A66FEE-06A1-4F05-8D5F-B220B9E7FE5A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{41A66FEE-06A1-4F05-8D5F-B220B9E7FE5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{41A66FEE-06A1-4F05-8D5F-B220B9E7FE5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{41A66FEE-06A1-4F05-8D5F-B220B9E7FE5A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
