@@ -1,0 +1,3 @@
+[submodule "DotnetPatterns"]
+	path = DotnetPatterns
+	url = https://github.com/popemkt/dotnet-miscs-adv
